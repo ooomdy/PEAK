@@ -1,0 +1,14 @@
+button.test{
+  color: red;
+}
+button.hidden{
+  visibility: hidden;
+}
+
+div.visible {
+    visibility: visible;
+}
+
+div.hidden {
+    visibility: hidden;
+}
