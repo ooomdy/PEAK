@@ -1,0 +1,33 @@
+@import "normalize.css";
+@import "base/_variables";
+@import "base/_mixins";
+@import "base/_global";
+@import "modules/_wrapper";
+@import "modules/_site-header";
+@import "modules/_primary-nav";
+@import "modules/_large-hero";
+@import "modules/_btn";
+@import "modules/_calendar";
+@import "modules/_travel-btn";
+@import "modules/_info-gather";
+@import "modules/_calendar-title";
+@import "modules/_color-change";
+@import "modules/_manager-page";
+
+
+/* visibility */
+button.hidden{
+  visibility: hidden;
+}
+
+div.visible {
+    visibility: visible;
+}
+
+div.hidden {
+    visibility: hidden;
+}
+
+body {
+    background-color: #16161d;
+}

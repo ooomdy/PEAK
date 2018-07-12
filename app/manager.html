@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+    <title>PEAK Manager View</title>
+    <meta name="keywords" content="UPS, PEAK, parcel, volunteer, winter, holiday, planning, tool, register">
+    <meta name="description" content="UPS has an OVERFLOWING amount of parcels to deliver. Register to help here!">
+
+    <!-- build:css assets/styles/styles.css -->
+    <link rel="stylesheet" href="temp/styles/styles.css">
+    <!-- endbuild -->
+  </head>
+  <body background-color: #16161d;>
+    <header class="site-header">
+      <div class="wrapper">
+        <div class="site-header__logo">
+          <picture>
+            <img srcset="assets/images/UPS-logo.png" alt="UPS Logo">
+          </picture>
+        </div>
+        <div class="site-header__menu-icon">
+          <div class="site-header__menu-icon__middle"></div>
+        </div>
+
+        <div class="site-header__menu-content">
+          <div class="site-header__btn-container" id="save">
+            <a href="#" class="btn open-modal" id="save-btn">Save</a>
+          </div>
+          <div class="site-header__btn-container" id="go-back">
+            <a href="#" class="btn open-modal" id="restart">Restart</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="manager-page">
+      <p class="manager-page__together">State:</p>
+      <select class="manager-page__together" id="state-dropdown" onchange="change_state(this.value)">
+      </select>
+      <br>
+      <p class="manager-page__together" onchange="change_myselect(this.value)">Hub:</p>
+      <select class="manager-page__together" id="state-dropdown">
+      </select>
+      <br>
+      <p>What Dates:</p>
+
+      <p class="manager-page__together">How many preloaders?</p>
+      <input class="manager-page__together" type="text" name="numPreloader" value="0">
+      <br>
+      <p class="manager-page__together">How many Driverhelpers?</p>
+      <input class="manager-page__together" type="text" name="numDriverhelper" value="0">
+      <br>
+      <button type="button" name="submit" id="look">Look For People</button>
+
+      <p>Preloaders</p>
+      <div class="manager-page__set-scroll__left manager-page__together" id="pre-inState">
+        <p>In State:</p>
+      </div>
+      <div class="manger-page__set-scroll__right manager-page__together" id="pre-outState">
+        <p>Out of State:</p>
+      </div>
+      <p>Driverhelpers</p>
+      <div class="manger-page__set-scroll__left">
+
+      </div>
+      <div class="manger-page__set-scroll__right">
+
+      </div>
+
+
+
+
+    </div>
+
+    <!-- build:js assets/scripts/vendor.js -->
+    <script src="script-m.js"></script>
+    <!-- endbuild -->
+
+  </body>
+</html>

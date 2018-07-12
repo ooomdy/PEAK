@@ -1,0 +1,28 @@
+.manager-page{
+  padding-top: 60px;
+  position: absolute;
+  top: 17.5%;
+  transform: translateX(17.5%);
+  height: 300%;
+  width: 75%;
+  text-align: left;
+  background-color: #ffffff;
+
+
+
+
+  &__set-scroll{
+    /* some code */
+
+    &__left{
+      /* some code */
+    }
+    &__right{
+      /* some code */
+    }
+  }
+  &__together{
+  		display:inline-block;margin-right:5px;
+  }
+}
+/* end */

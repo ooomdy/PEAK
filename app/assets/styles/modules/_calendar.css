@@ -1,0 +1,41 @@
+.calendar{
+
+  position: absolute;
+  top: 25%;
+  transform: translateX(1%);
+  height: 50px;
+  text-align: center;
+  border: 2px;
+  border-color: black;
+  display: block;
+
+  &__week{
+
+  		display:inline-block;margin-right:5px;
+
+      width: 450px;
+  }
+
+
+  &__day{
+		display:inline-block;margin-right:8px;
+
+    color: white;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  &__set-width {
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+  }
+
+  &__red{
+    background-color: red;
+  }
+
+  &__green{
+    background-color: green;
+  }
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+    <title>People & Assignment Assignment Kit (Peak)</title>
+    <meta name="keywords" content="UPS, PEAK, parcel, volunteer, winter, holiday, planning, tool, register">
+    <meta name="description" content="UPS has an OVERFLOWING amount of parcels to deliver. Register to help here!">
+
+    <!-- build:css assets/styles/styles.css -->
+    <link rel="stylesheet" href="temp/styles/styles.css">
+    <!-- endbuild -->
+</head>
+
+  <body background-color: #16161d;>
+    <header class="site-header">
+      <div class="wrapper">
+        <div class="site-header__logo">
+          <picture>
+            <img srcset="assets/images/UPS-logo.png" alt="UPS Logo">
+          </picture>
+        </div>
+        <div class="site-header__menu-icon">
+          <div class="site-header__menu-icon__middle"></div>
+        </div>
+
+        <div class="site-header__menu-content">
+          <div class="site-header__btn-container hidden" id="save">
+            <a href="#" class="btn open-modal" id="save-btn">Save</a>
+          </div>
+
+          <div class="site-header__btn-container hidden" id="go-back">
+            <a href="#" class="btn open-modal" id="back">Go Back</a>
+          </div>
+        </div>
+      </div>
+    </header>
+  <div class="visible" id="firstDiv">
+
+  </div>
+
+  <div class="" id="secondDiv">
+    <div class="large-hero">
+
+      <picture>
+        <source srcset="assets/images/Warehouse--large.png 1920w" media="(min-width: 1380px)">
+        <source srcset="assets/images/Warehouse--medium.png 1380w" media="(min-width: 990px)">
+        <img srcset="assets/images/Warehouse--small.png 990w" alt="STUNNING Picture of a Warehouse" class="large-hero__image">
+      </picture>
+
+
+      <div class="large-hero__white-box">
+        <div class="large-hero__text-content">
+          <div class="wrapper">
+            <h1 class="large-hero__title">PEAK Registration</h1>
+            <div class="large-hero__yellowBox">
+
+
+            </div>
+            <div class="large-hero__bottom_left">
+              <p class="large-hero__nominate">Nominate Another UPSer!</p>
+              <button class="add__btn" id="">GO!</button>
+            </div>
+            <div class="large-hero__bottom_right">
+              <p class="large-hero__continue">Continue As:</p>
+              <div class="large-hero__continue_labels">
+                <label id="first">First</label>&nbsp<label id="last">Last</label>
+              </div>
+              <button class="add__btn" id="mainToInfo">GO!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <button id="button1">Push Me for Andy Mecke</button>
+    <button id="button2">Push Me for Reza</button>
+
+
+  </div>
+
+  <div class="hidden" id="thirdDiv">
+    <div class="large-hero__text-content-page-2">
+      <div class="wrapper">
+
+        <h1 class="large-hero__title">PEAK Registration</h1>
+        <hr/>
+        <h2 class="large-hero__title-smaller" id="header-to-change">Information Gathering</h2>
+
+        <div class="large-hero__bottom_left__info" id="position-form">
+          <p class="">Select a position you'd prefer:</p>
+          <form class="" action="index.html" >
+            <label><input type="radio" name="position" value="both"  id="role-selector-both">Both</label><br><br>
+
+            <label><input type="radio" name="position" value="preloader"  id="role-selector-preloader">Preloader</label>
+            &nbsp
+            <label><input type="radio" name="position" value="driver helper"  id="role-selector-driverhelper">Driver Helper</label>
+          </form>
+
+
+        </div>
+
+        <div class="info-gather">
+          <p class="info-gather__together">State:</p>
+          <select class="info-gather__together" id="state-dropdown">
+          </select>
+          <div class="info-gather__together" id="travel-form">
+            <p class="">Would you be willing to travel?</p>
+            <form class="" action="index.html">
+              <label><input type="radio" name="travel" value="yes" id="travel-yes">Yes</label>
+
+              <label><input type="radio" name="travel" value="no" id="travel-no">No</label>
+            </form>
+          </div>
+        </div>
+
+
+
+        <h2 class="calendar-title">Weeks Available to Volunteer</h2>
+
+        <div class="calendar">
+
+          <div class="celendar__week">
+            <p>Week 1<br>Nov. 26 - Dec. 1 </p>
+
+            <div class="calendar__day calendar__red calendar__set-width" id="n26"><p>26:Su</p></div>
+            <div class="calendar__day calendar__red calendar__set-width" id="n27"><p>27:M</p></div>
+            <div class="calendar__day calendar__red calendar__set-width" id="n28"><p>28:T</p></div>
+            <div class="calendar__day calendar__red calendar__set-width" id="n29"><p>29:W</p></div>
+            <div class="calendar__day calendar__red calendar__set-width" id="n30"><p>30:Th</p></div>
+            <div class="calendar__day calendar__red calendar__set-width" id="n31"><p>31:F</p></div>
+            <div class="calendar__day calendar__red calendar__set-width" id="d1"><p>1:Sa</p></div>
+          </div>
+          <br>
+          <br>
+          <div class="calendar__week">
+            <p>Week 2<br>Dec.2 - Dec. 8 </p>
+            <div class="calendar__day calendar__red calendar__set-width" id="d2"><p>2:Su</p></div>
+            <div class="calendar__day calendar__red calendar__set-width" id="d3"><p>3:M</p></div>
+            <div class="calendar__day calendar__red calendar__set-width" id="d4"><p>4:T</p></div>
+            <div class="calendar__day calendar__red calendar__set-width" id="d5"><p>5:W</p></div>
+            <div class="calendar__day calendar__red calendar__set-width" id="d6"><p>6:Th</p></div>
+            <div class="calendar__day calendar__red calendar__set-width" id="d7"><p>7:F</p></div>
+            <div class="calendar__day calendar__red calendar__set-width" id="d8"><p>8:Sa</p></div>
+          </div>
+
+
+          <div class="calendar__week">
+            <p>Week 3<br>Dec.9 - Dec. 15 </p>
+            <div class="calendar__day calendar__red calendar__set-width" id="d9"><p>9:Su</p></div>
+            <div class="calendar__day calendar__red calendar__set-width" id="d10"><p>10:M</p></div>
+            <div class="calendar__day calendar__red calendar__set-width" id="d11"><p>11:T</p></div>
+            <div class="calendar__day calendar__red calendar__set-width" id="d12"><p>12:W</p></div>
+            <div class="calendar__day calendar__red calendar__set-width" id="d13"><p>13:Th</p></div>
+            <div class="calendar__day calendar__red calendar__set-width" id="d14"><p>14:F</p></div>
+            <div class="calendar__day calendar__red calendar__set-width" id="d15"><p>15:Sa</p></div>
+          </div>
+          <br><br>
+
+          <div class="calendar__week">
+            <p>Week 4<br>Dec.16 - Dec. 22 </p>
+            <div class="calendar__day calendar__red calendar__set-width" id="d16"><p>16:Su</p></div>
+            <div class="calendar__day calendar__red calendar__set-width" id="d17"><p>17:M</p></div>
+            <div class="calendar__day calendar__red calendar__set-width" id="d18"><p>18:T</p></div>
+            <div class="calendar__day calendar__red calendar__set-width" id="d19"><p>19:W</p></div>
+            <div class="calendar__day calendar__red calendar__set-width" id="d20"><p>20:Th</p></div>
+            <div class="calendar__day calendar__red calendar__set-width" id="d21"><p>21:F</p></div>
+            <div class="calendar__day calendar__red calendar__set-width" id="d22"><p>22:Sa</p></div>
+          </div>
+
+          <div class="calendar__week">
+            <p>Week 5<br>Dec.23 - Dec. 24 </p>
+            <div class="calendar__day calendar__red calendar__set-width" id="d23"><p>23:Su</p></div>
+            <div class="calendar__day calendar__red calendar__set-width" id="d24"><p>24:M</p></div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <!-- build:js assets/scripts/vendor.js -->
+  <script src="/temp/scripts/app.js"></script>
+  <!-- endbuild -->
+
+
+  </body>
+</html>
