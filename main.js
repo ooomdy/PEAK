@@ -94,7 +94,7 @@ app.get('/preloaderIn', (req, res) => {
   });
 
   const job = req.params.id
-  const querySting = "SELECT FirstName, LastName FROM peak.registration r join peak.employee e on  r.adid = e.adid join availability a on r.adid = a.adid WHERE PositionID IN (1,2) AND Status = 0 AND Date = '2018/11/30' AND Travel = 0";
+  const querySting = "SELECT e.ADID, FirstName, LastName FROM peak.registration r join peak.employee e on  r.adid = e.adid join availability a on r.adid = a.adid WHERE PositionID IN (1,2) AND Status = 0 AND Date = '2018/11/30' AND Travel = 0";
   con.query(querySting, (err,result,fields) => {
 
     res.json(result);
@@ -124,7 +124,35 @@ app.get('/preloaderOut', (req, res) => {
   });
 
   const job = req.params.id
-  const querySting = "SELECT FirstName, LastName FROM peak.registration r join peak.employee e on  r.adid = e.adid join availability a on r.adid = a.adid WHERE PositionID IN (1,2) AND Status = 0 AND Date = '2018/11/30' AND Travel = 1 AND StateID <> 1";
+  const querySting = "SELECT e.ADID, FirstName, LastName FROM peak.registration r join peak.employee e on  r.adid = e.adid join availability a on r.adid = a.adid WHERE PositionID IN (1,2) AND Status = 0 AND Date = '2018/11/30' AND Travel = 1 AND StateID <> 1";
+  con.query(querySting, (err,result,fields) => {
+
+    res.json(result);
+
+  })
+  con.end();
+})
+//Three
+app.get('/driverIn', (req, res) => {
+  function getConnection() {
+    return mysql.createConnection({
+      host: "localhost",
+      user: "root",
+      password: "!Andy0505",
+      database:"peak",
+      port: 3306
+
+    });
+  };
+  const con = getConnection();
+
+  con.connect(function(err) {
+    if (err) throw err;
+    console.log("Connected!");
+  });
+
+  const job = req.params.id
+  const querySting = "SELECT e.ADID, FirstName, LastName FROM peak.registration r join peak.employee e on  r.adid = e.adid join availability a on r.adid = a.adid WHERE PositionID IN (1,3) AND Status = 0 AND Date = '2018/12/05' AND Travel = 0 AND StateID = 1";
   con.query(querySting, (err,result,fields) => {
 
     res.json(result);
@@ -133,6 +161,61 @@ app.get('/preloaderOut', (req, res) => {
   con.end();
 })
 
+app.get('/driverIn', (req, res) => {
+  function getConnection() {
+    return mysql.createConnection({
+      host: "localhost",
+      user: "root",
+      password: "!Andy0505",
+      database:"peak",
+      port: 3306
+
+    });
+  };
+  const con = getConnection();
+
+  con.connect(function(err) {
+    if (err) throw err;
+    console.log("Connected!");
+  });
+
+  const job = req.params.id
+  const querySting = "SELECT e.ADID, FirstName, LastName FROM peak.registration r join peak.employee e on  r.adid = e.adid join availability a on r.adid = a.adid WHERE PositionID IN (1,3) AND Status = 0 AND Date = '2018/12/05' AND Travel = 0 AND StateID = 1";
+  con.query(querySting, (err,result,fields) => {
+
+    res.json(result);
+
+  })
+  con.end();
+})
+//Four
+app.get('/driverOut', (req, res) => {
+  function getConnection() {
+    return mysql.createConnection({
+      host: "localhost",
+      user: "root",
+      password: "!Andy0505",
+      database:"peak",
+      port: 3306
+
+    });
+  };
+  const con = getConnection();
+
+  con.connect(function(err) {
+    if (err) throw err;
+    console.log("Connected!");
+  });
+
+  const job = req.params.id
+  const querySting = "SELECT e.ADID, FirstName, LastName FROM peak.registration r join peak.employee e on  r.adid = e.adid join availability a on r.adid = a.adid WHERE PositionID IN (1,3) AND Status = 0 AND Date = '2018/12/05' AND Travel = 1 AND StateID <> 1";
+  con.query(querySting, (err,result,fields) => {
+
+    res.json(result);
+
+  })
+  con.end();
+})
 
 
 
