@@ -68,7 +68,7 @@
 		color: #fff;
 		font-size: 1.1rem;
 		font-weight: 300;
-		max-width: 20rem;
+		max-width: 18rem;
 
 		@mixin atSmall {
 			font-size: 1.875rem;

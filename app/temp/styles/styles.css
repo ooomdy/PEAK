@@ -873,7 +873,7 @@ a {
 		color: #fff;
 		font-size: 1.1rem;
 		font-weight: 300;
-		max-width: 20rem;
+		max-width: 18rem;
 
 
 	}
@@ -1002,40 +1002,38 @@ a {
   }
 
 .calendar{
-
   position: absolute;
-  top: 25%;
   -webkit-transform: translateX(1%);
           transform: translateX(1%);
-  height: 50px;
   text-align: center;
   border: 2px;
   border-color: black;
-  display: block;
 }
 
 .calendar__week{
-
-  		display:inline-block;margin-right:5px;
-
-      width: 450px;
+  		display:inline-block;
+      /*margin-right:5px;*/
+      width: auto;
   }
 
 .calendar__day{
-		display:inline-block;margin-right:8px;
-
+		display:inline-block;
+    /*margin-bottom: 5px;*/
+    margin:3px;
     color: white;
     cursor: pointer;
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
+    font-size: 1.2rem;
+    line-height: .0rem;
   }
 
 .calendar__set-width {
     padding: 5px;
-    width: 50px;
-    height: 50px;
+    width: auto;
+    /*height: 40px;*/
   }
 
 .calendar__red{

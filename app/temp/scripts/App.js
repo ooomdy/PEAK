@@ -152,6 +152,13 @@ document.getElementById('back').addEventListener('click', function () {
   document.getElementById("go-back").classList.add('hidden');
 });
 
+document.getElementById('n25').addEventListener('click', function () {
+  if ((0, _jquery2.default)('#n25').hasClass('calendar__green')) {
+    document.getElementById('n25').classList.remove('calendar__green');document.getElementById('n25').classList.add('calendar__red');
+  } else {
+    document.getElementById('n25').classList.remove('calendar__red');document.getElementById('n25').classList.add('calendar__green');
+  }
+});
 document.getElementById('n26').addEventListener('click', function () {
   if ((0, _jquery2.default)('#n26').hasClass('calendar__green')) {
     document.getElementById('n26').classList.remove('calendar__green');document.getElementById('n26').classList.add('calendar__red');
@@ -185,13 +192,6 @@ document.getElementById('n30').addEventListener('click', function () {
     document.getElementById('n30').classList.remove('calendar__green');document.getElementById('n30').classList.add('calendar__red');
   } else {
     document.getElementById('n30').classList.remove('calendar__red');document.getElementById('n30').classList.add('calendar__green');
-  }
-});
-document.getElementById('n31').addEventListener('click', function () {
-  if ((0, _jquery2.default)('#n31').hasClass('calendar__green')) {
-    document.getElementById('n31').classList.remove('calendar__green');document.getElementById('n31').classList.add('calendar__red');
-  } else {
-    document.getElementById('n31').classList.remove('calendar__red');document.getElementById('n31').classList.add('calendar__green');
   }
 });
 document.getElementById('d1').addEventListener('click', function () {
